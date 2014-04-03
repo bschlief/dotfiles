@@ -101,7 +101,7 @@ fun! <SID>StripTrailingWhitespaces()
     %s/\s\+$//e
     call cursor(l, c)
 endfun
-autocmd FileType c,cpp,java,ruby,python,puppet autocmd BufWritePre <buffer> :call <SID>StripTrailingWhitespaces()
+autocmd FileType c,cpp,java,ruby,python,puppet,json autocmd BufWritePre <buffer> :call <SID>StripTrailingWhitespaces()
 
 nmap <Leader>t= :Tabularize /=<CR>
 vmap <Leader>t= :Tabularize /=<CR>
@@ -155,3 +155,6 @@ map  <C-l> <C-w>l
 
 " F4 to toggle highlighting
 noremap <F4> :set hlsearch! hlsearch?<CR>
+
+command JSONPP execute "%!python -m json.tool"
+map <leader>p :JSONPP
