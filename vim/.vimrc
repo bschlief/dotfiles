@@ -14,6 +14,7 @@ Bundle 'scrooloose/nerdtree'
 Bundle 'tpope/vim-repeat'
 Bundle 'edsono/vim-matchit'
 Bundle 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
+Bundle 'Lokaltog/vim-easymotion'
 Bundle 'scrooloose/nerdtree'
 Bundle 'rodjek/vim-puppet'
 Bundle 'godlygeek/tabular'
@@ -55,8 +56,8 @@ filetype plugin indent on     " required!
 
 set smartindent
 set expandtab
-set tabstop=2
-set shiftwidth=2
+set tabstop=4
+set shiftwidth=4
 syntax on
 filetype on
 filetype indent on
