@@ -1,48 +1,29 @@
 filetype off                   " required!
 set nocompatible               " be iMproved
 
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
 
 " let Vundle manage Vundle
 " required!
-Bundle 'gmarik/vundle'
-Bundle 'tpope/vim-surround'
-Bundle 'scrooloose/syntastic'
-Bundle 'scrooloose/nerdcommenter'
-Bundle 'scrooloose/nerdtree'
-Bundle 'tpope/vim-repeat'
-Bundle 'edsono/vim-matchit'
-Bundle 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
-Bundle 'Lokaltog/vim-easymotion'
-Bundle 'scrooloose/nerdtree'
-Bundle 'rodjek/vim-puppet'
-Bundle 'godlygeek/tabular'
-Bundle 'vim-scripts/YankRing.vim'
-Bundle 'kien/ctrlp.vim'
-Bundle 'vim-scripts/taglist.vim'
-Bundle 'tpope/vim-fugitive'
-Bundle 'nanotech/jellybeans.vim'
+Plugin 'gmarik/Vundle.vim'
+Plugin 'tpope/vim-surround'
+Plugin 'scrooloose/syntastic'
+Plugin 'scrooloose/nerdcommenter'
+Plugin 'scrooloose/nerdtree'
+Plugin 'tpope/vim-repeat'
+Plugin 'edsono/vim-matchit'
+Plugin 'Lokaltog/vim-easymotion'
+Plugin 'scrooloose/nerdtree'
+Plugin 'rodjek/vim-puppet'
+Plugin 'godlygeek/tabular'
+Plugin 'vim-scripts/YankRing.vim'
+Plugin 'kien/ctrlp.vim'
+Plugin 'vim-scripts/taglist.vim'
+Plugin 'tpope/vim-fugitive'
+Plugin 'nanotech/jellybeans.vim'
 
-"set guifont=Source\ Code\ Pro\ Light\ for\ Powerline
-set guifont=Droid\ Sans\ Mono\ for\ Powerline
-
-" My Bundles here:
-"
-" original repos on github
-"Bundle 'tpope/vim-fugitive'
-"Bundle 'Lokaltog/vim-easymotion'
-"Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
-"Bundle 'tpope/vim-rails.git'
-" vim-scripts repos
-"Bundle 'L9'
-"Bundle 'FuzzyFinder'
-" non github repos
-"Bundle 'git://git.wincent.com/command-t.git'
-" git repos on your local machine (ie. when working on your own plugin)
-" Bundle 'file:///Users/gmarik/path/to/plugin'
-" ...
-
+call vundle#end()
 filetype plugin indent on     " required!
 
 " Brief help
