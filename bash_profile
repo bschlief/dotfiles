@@ -35,3 +35,5 @@ fi
 echo "all set"
 
 PS1="\[$(tput bold)\]\[$(tput setaf 1)\]∴  \[$(tput setaf 3)\]\u\[$(tput setaf 2)\]@\[$(tput setaf 4)\]\h \[$(tput setaf 5)\] \w\[$(tput setaf 6)\]\[\$(__git_ps1) \]\[$(tput setaf 7)\]\[$(tput setaf 1)\]∴  \[$(tput sgr0)\]"
+export PROMPT_COMMAND='echo -ne "\033]0;\007"'
+[ -f /Users/bryans/.django_bash_completion ] && source /Users/bryans/.django_bash_completion
