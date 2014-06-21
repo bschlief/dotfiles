@@ -10,7 +10,6 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'tpope/vim-surround'
 Plugin 'scrooloose/syntastic'
 Plugin 'scrooloose/nerdcommenter'
-Plugin 'scrooloose/nerdtree'
 Plugin 'tpope/vim-repeat'
 Plugin 'edsono/vim-matchit'
 Plugin 'Lokaltog/vim-easymotion'
@@ -22,6 +21,7 @@ Plugin 'kien/ctrlp.vim'
 Plugin 'vim-scripts/taglist.vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'nanotech/jellybeans.vim'
+Plugin 'bling/vim-airline'
 
 call vundle#end()
 filetype plugin indent on     " required!
@@ -46,7 +46,7 @@ filetype plugin on
 compiler ruby
 set wrap
 set ruler
-colorscheme jellybeans
+"colorscheme jellybeans
 set number
 
 set laststatus=2
