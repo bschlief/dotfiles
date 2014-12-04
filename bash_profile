@@ -21,11 +21,8 @@ if [ -f $HOME/.django_bash_completion ]; then
     source /Users/bryans/.django_bash_completion
 fi
 
-if [ -f /opt/boxen/homebrew/share/python/virtualenvwrapper.sh ]; then
-    echo "enabling virtualenvwrapper"
-    export VIRTUALENVWRAPPER_PYTHON='/opt/boxen/homebrew/bin/python2.7'
-    source /opt/boxen/homebrew/share/python/virtualenvwrapper.sh
-fi
+echo "enabling virtualenvwrapper"
+source `which virtualenvwrapper.sh`
 
 if [ -f .tokens ]; then
     echo "enabling api tokens"
@@ -34,6 +31,6 @@ fi
 
 echo "all set"
 
-PS1="\[$(tput bold)\]\[$(tput setaf 1)\]∴  \[$(tput setaf 3)\]\u\[$(tput setaf 2)\]@\[$(tput setaf 4)\]\h \[$(tput setaf 5)\] \w\[$(tput setaf 6)\]\[\$(__git_ps1) \]\[$(tput setaf 7)\]\[$(tput setaf 1)\]∴  \[$(tput sgr0)\]"
+PS1="\[$(tput bold)\]\[$(tput setaf 1)\]*  \[$(tput setaf 3)\]\u\[$(tput setaf 2)\]@\[$(tput setaf 4)\]\h \[$(tput setaf 5)\] \w\[$(tput setaf 6)\]\[\$(__git_ps1) \]\[$(tput setaf 7)\]\[$(tput setaf 1)\]*  \[$(tput sgr0)\]"
 export PROMPT_COMMAND='echo -ne "\033]0;\007"'
 [ -f /Users/bryans/.django_bash_completion ] && source /Users/bryans/.django_bash_completion

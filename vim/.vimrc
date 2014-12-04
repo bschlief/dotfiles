@@ -140,3 +140,4 @@ noremap <F4> :set hlsearch! hlsearch?<CR>
 
 command JSONPP execute "%!python -m json.tool"
 map <leader>p :JSONPP
+colorscheme codeschool
