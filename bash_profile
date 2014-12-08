@@ -26,6 +26,9 @@ if [ -f .tokens ]; then
     source .tokens
 fi
 
+# enable virtualenvwrapper using pyenv
+pyenv virtualenvwrapper
+
 echo "all set"
 
 PS1="\[$(tput bold)\]\[$(tput setaf 1)\]*  \[$(tput setaf 3)\]\u\[$(tput setaf 2)\]@\[$(tput setaf 4)\]\h \[$(tput setaf 5)\] \w\[$(tput setaf 6)\]\[\$(__git_ps1) \]\[$(tput setaf 7)\]\[$(tput setaf 1)\]*  \[$(tput sgr0)\]"
