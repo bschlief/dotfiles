@@ -21,9 +21,6 @@ if [ -f $HOME/.django_bash_completion ]; then
     source /Users/bryans/.django_bash_completion
 fi
 
-echo "enabling virtualenvwrapper"
-source `which virtualenvwrapper.sh`
-
 if [ -f .tokens ]; then
     echo "enabling api tokens"
     source .tokens
